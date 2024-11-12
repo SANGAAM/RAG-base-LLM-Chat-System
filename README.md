@@ -1,3 +1,5 @@
+![Screenshot 2024-10-18 145500](https://github.com/user-attachments/assets/7047cc10-ef03-4ee6-b6d3-15af154c9cb8)
+
 # RAG-Based Chat System
 
 Welcome to the RAG-Based Chat System! This project demonstrates a Retrieval-Augmented Generation (RAG) architecture that combines structured and unstructured data retrieval from a Neo4j graph database. Leveraging cutting-edge tools like LangChain, Groq, Neo4j, and Presidio, this system ensures secure and comprehensive responses by embedding sensitive data, applying entity extraction, and employing hybrid search.
@@ -11,6 +13,9 @@ The primary goal is to create a robust chat system capable of:
 
 ## 🛠️ Tools Used
 - **Neo4j**: Graph database for storing and querying data.
+  
+   ![Screenshot 2024-10-18 152831](https://github.com/user-attachments/assets/8c26516a-c652-4a0d-985b-4d3a319462af)
+
 - **LangChain**: Manages language model pipelines.
 - **Groq**: Powers embeddings for enhanced retrieval.
 - **Presidio**: Handles data anonymization and deanonymization.
@@ -27,13 +32,26 @@ The architecture employs:
 ## 📜 Steps
 
 1. **Anonymize Sensitive Information**: Presidio anonymizes data to protect privacy.
+   
+ ![Screenshot 2024-10-18 153612](https://github.com/user-attachments/assets/bd82a7ca-97f4-414c-a7eb-3056ac087184)
+
 2. **Data Chunking**: Splits documents for Neo4j embedding.
 3. **Vector Index Creation**: Transforms text into numerical vectors with OpenAI embeddings for hybrid search.
+
+  ![Screenshot 2024-10-18 152928](https://github.com/user-attachments/assets/6dc6b25e-804f-4f90-b87a-7ae194b794fb)
+
+   
 4. **Full-Text Indexing**: Enables efficient search within specific node properties in Neo4j.
 5. **Entity Extraction**: Structures data entities with Pydantic for accuracy.
+
+![Screenshot 2024-10-18 153117](https://github.com/user-attachments/assets/254ab731-d411-4245-bae5-4e101f9e8e11)
+
+   
 6. **Hybrid Data Retrieval**: Combines Neo4j structured data and embeddings for a comprehensive search.
 7. **Chat History Rephrasing**: Reframes follow-up questions for more precise responses.
 8. **Deanonymization**: Presidio reverses anonymization post-retrieval to restore original data.
+    
+![Screenshot 2024-10-18 153631](https://github.com/user-attachments/assets/403e4614-312d-4846-81c1-21a6ef24fc50)
 
 ## 🚀 How to Use
 1. **Setup**: Install dependencies and configure Neo4j, LangChain, and Presidio.
